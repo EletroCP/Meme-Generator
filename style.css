@@ -20,3 +20,20 @@
   color: white;
   font-size: 30px;
 }
+
+.buttonStyle{
+  margin-top: 5px;
+}
+
+#fire{
+  background-color: red;
+  
+}
+
+#water{
+  background-color: blue;
+}
+
+#earth{
+  background-color: green;
+}

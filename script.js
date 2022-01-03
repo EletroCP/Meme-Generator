@@ -8,5 +8,19 @@ function memeText(){
 }
 
 
-function updateImage(){
+function changeBoard(element){
+  let borda = document.querySelector("#meme-image-container")
+  if(element.id === "fire"){
+    borda.style.border = "3px"
+    borda.style.borderColor = "red"
+    borda.style.borderStyle = "dashed"
+  }else if(element.id === "water"){
+    borda.style.border = "5px"
+    borda.style.borderColor = "blue"
+    borda.style.borderStyle = "double"
+  }else if(element.id === "earth"){
+    borda.style.border = "6px"
+    borda.style.borderColor = "green"
+    borda.style.borderStyle = "groove"
+  }
 }
