@@ -5,13 +5,16 @@
   border-style: solid;
   border-color: black;
   display: flex;
+  background-color: white;
 }
 #meme-image{
   width: 100%;
   height: 100%;
   position: relative;
+  
 }
 
 #meme-text{
   position: absolute;
+  color: aqua;
 }
