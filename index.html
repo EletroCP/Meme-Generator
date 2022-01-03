@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,25 @@
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
-  <body>
-    <header>
-      <input type="text" id="text-input" onkeyup="memeText()">
-    </header>
-    <main>
-      <section id="meme-image-container">
-        <p id="meme-text">
-        
-        </p>
-      </section>
-    </main>
-    <script src="script.js"></script>
-  </body>
+
+<body>
+  <header>
+    <input type="text" id="text-input" onkeyup="memeText()">
+    <input id="meme-insert" type="file" accept="image/*">
+  </header>
+  <main>
+    <section id="meme-image-container">
+      
+        <img id="meme-image" src="6818349_orig.png">   </img>
+          <div id="meme-text">
+            <p>
+
+          </p> 
+     
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
 </html>
