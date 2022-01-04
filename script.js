@@ -1,5 +1,3 @@
-let newImage = document.querySelector("#meme-insert")
-let imageContainer = document.querySelector("#meme-image")
 
 function memeText(){
   const text = document.querySelector("#text-input").value
@@ -23,4 +21,17 @@ function changeBoard(element){
     borda.style.borderColor = "green"
     borda.style.borderStyle = "groove"
   }
+}
+
+let changeImage = function (event){
+  let newMeme = document.querySelector("#meme-image")
+  newMeme.src = URL.createObjectURL(event.target.files[0])
+  newMeme.onload = function(){
+    URL.revokeObjectURL(newMeme.src)
+  }
+}
+
+let fixedMeme = function (teste){
+  let newMeme = document.querySelector("#meme-image")
+  newMeme.src = teste.src
 }

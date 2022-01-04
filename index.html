@@ -12,11 +12,11 @@
 <body>
   <header>
     <input type="text" id="text-input" onkeyup="memeText()" maxlength="60">
-    <input id="meme-insert" type="file" accept="image/*">
+    <input id="meme-insert" type="file" accept="image/*" onchange="changeImage(event)">
   </header>
   <main>
     <section id="meme-image-container">
-        <img id="meme-image" src="6818349_orig.png">   </img>
+        <img id="meme-image" src="imgs/meme2.png">   </img>
           <div id="meme-text">
             <p>
 
@@ -24,9 +24,17 @@
       </div>
     </section>
 
-    <button id="fire"  class="buttonStyle" onclick="changeBoard(this)">Fire</button>
-    <button id="water" class="buttonStyle" onclick="changeBoard(this)">Water</button>
-    <button id="earth" class="buttonStyle" onclick="changeBoard(this)">Earth</button>
+    <div>
+      <img id="meme-1" src="imgs/meme1.png" alt="Bebendo de um Hidrante" class="miniMeme" onclick="fixedMeme(this)">
+      <img id="meme-2" src="imgs/meme2.png" alt="Garotinha sorrindo de incendio" class="miniMeme" onclick="fixedMeme(this)">
+      <img id="meme-3" src="imgs/meme3.png" alt="Djodjo tramontina" class="miniMeme" onclick="fixedMeme(this)">
+      <img id="meme-4" src="imgs/meme4.png" alt="Está tudo bem também" class="miniMeme" onclick="fixedMeme(this)">
+    </div>
+    <div>
+      <button id="fire"  class="buttonStyle" onclick="changeBoard(this)">Fire</button>
+      <button id="water" class="buttonStyle" onclick="changeBoard(this)">Water</button>
+      <button id="earth" class="buttonStyle" onclick="changeBoard(this)">Earth</button>
+    </div>
   </main>
   <script src="script.js"></script>
 </body>
