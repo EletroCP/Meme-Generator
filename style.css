@@ -1,4 +1,4 @@
-#meme-image-container{
+#meme-image-container {
   width: 50%;
   height: 50%;
   border: 1px solid black;
@@ -6,38 +6,39 @@
   background-color: white;
   box-sizing: border-box;
 }
-#meme-image{
+
+#meme-image {
   width: 100%;
   height: 100%;
   position: relative;
   box-sizing: border-box;
 }
 
-#meme-text{
+#meme-text {
   text-shadow: black 5px 5px 5px;
   position: absolute;
   color: white;
   font-size: 30px;
 }
 
-.buttonStyle{
+.buttonStyle {
   margin-top: 5px;
 }
 
-#fire{
+#fire {
   background-color: red;
-  
+
 }
 
-#water{
+#water {
   background-color: blue;
 }
 
-#earth{
+#earth {
   background-color: green;
 }
 
-.miniMeme{
+.miniMeme {
   width: 60px;
   height: 60px;
 }
