@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <link rel="icon" href="./imgs/siteLogo.ico">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,29 +11,48 @@
 </head>
 
 <body>
-  <header>
-    <input type="text" id="text-input" maxlength="60">
-    <input id="meme-insert" type="file" accept="image/*">
+  <header id="header">
+    <h3>Meme Generator</h3>
+      <input id="meme-insert" type="file" accept="image/*">
   </header>
-  <main>
-    <section id="meme-image-container">
-        <img id="meme-image" src="imgs/meme2.png">   </img>
-          <div id="meme-text">
-            <p></p> 
-      </div>
-    </section>
-
-    <div>
-      <img id="meme-1" src="imgs/meme1.png" alt="Bebendo de um Hidrante" class="miniMeme">
-      <img id="meme-2" src="imgs/meme2.png" alt="Garotinha sorrindo de incendio" class="miniMeme">
-      <img id="meme-3" src="imgs/meme4.png" alt="Está tudo bem também" class="miniMeme">
-    </div>
-    <div>
-      <button id="fire"  class="buttonStyle">Fire</button>
+  <div class="flexDiv">
+    <div class="elementalBtn">
+      <button id="fire" class="buttonStyle">Fire</button>
       <button id="water" class="buttonStyle">Water</button>
       <button id="earth" class="buttonStyle">Earth</button>
     </div>
+  </div>
+
+  <main>
+    <div id="mainContaiener" class="flexDiv">
+      <section id="meme-image-container">
+        <img id="meme-image" src="imgs/meme2.png"> </img>
+        <div id="meme-text">
+          <p></p>
+        </div>
+      </section>
+    </div>
+
+    <!--     <canvas id="canvas"></canvas>
+    <label for="uploader">Select file:</label>
+    <input type="file" id="uploader" />
+    <button>Download</button> -->
   </main>
+  <br>
+  <div class="flexDiv">
+    <input type="text" id="text-input" maxlength="60" placeholder="Escreva seu texto">
+  </div>
+  <br>
+  <div class="flexDiv">
+    <section id="otherMemes">
+      <div>
+        <img id="meme-1" src="imgs/meme1.png" alt="Bebendo de um Hidrante" class="miniMeme">
+        <img id="meme-2" src="imgs/meme2.png" alt="Garotinha sorrindo de incendio" class="miniMeme">
+        <img id="meme-3" src="imgs/meme4.png" alt="Está tudo bem também" class="miniMeme">
+      </div>
+    </section>
+  </div>
+
   <script src="script.js"></script>
 </body>
 
